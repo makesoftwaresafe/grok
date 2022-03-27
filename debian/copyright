@@ -24,27 +24,15 @@ License: Apache-2
 
 Files: src/lib/jp2/t1/OJPH/coding/*
  src/lib/jp2/t1/OJPH/common/*
- src/lib/jp2/t1/OJPH/others/*
 Copyright: 2019, Aous Naman
   2019, Kakadu Software Pty Ltd, Australia
   2019, The University of New South Wales, Australia
 License: BSD-2-clause
 
-Files: src/lib/jp2/t1/OpenHTJ2K/codestream/*
- src/lib/jp2/t1/OpenHTJ2K/coding/*
- src/lib/jp2/t1/OpenHTJ2K/common/*
-Copyright: 2019 - 2021, Osamu Watanabe
-License: BSD-2-clause
-
-
 Files: src/lib/jp2/tile/SparseCanvas.h
 Copyright: 2016-2020, Grok Image Compression Inc.
   2017, IntoPix SA <contact@intopix.com>
 License: AGPL-3 and BSD-2-clause
-
-Files: src/bin/common/windirent.h
-Copyright: 1998-2019 Toni Ronkko
-License: MIT
 
 Files: cmake/ucm.cmake
 Copyright: 2016, Viktor Kirilov
