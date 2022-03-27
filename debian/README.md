@@ -23,6 +23,20 @@ Guide to [setting up schroot](https://wiki.debian.org/Packaging/Pre-Requisites)
 
 1. `sudo schroot -c debian-sid`
 
+2. make sure that third party libraries are filter out by creating a local `attributes` file in the `$GIT_DIR/info` folder with contents:
+```
+/scripts export-ignore
+/tests export-ignore
+/tools export-ignore
+/thirdparty/include export-ignore
+/thirdparty/liblcms2 export-ignore
+/thirdparty/libpng export-ignore
+/thirdparty/libtiff export-ignore
+/thirdparty/libz export-ignore
+.gitattributes export-ignore
+.gitignore export-ignore
+```
+
 2. `$ git archive --format=tar v9.7.4 | gzip > libgrokj2k_9.7.4.orig.tar.gz && mv libgrokj2k_9.7.4.orig.tar.gz ..`
 
 3. `$ dpkg-buildpackage -us -uc`
