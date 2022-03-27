@@ -1,5 +1,4 @@
 usr/lib/*/libgrokj2k.so
-usr/lib/*/liblcms2.so.*
 usr/lib/*/cmake/grok-9.7/*.cmake
 usr/lib/*/pkgconfig/*.pc
 usr/include/grok-9.7
