@@ -23,7 +23,7 @@ Guide to [setting up schroot](https://wiki.debian.org/Packaging/Pre-Requisites)
 
 1. `sudo schroot -c debian-sid`
 
-2. make sure that third party libraries are filter out by creating a local `attributes` file in the `$GIT_DIR/info` folder with contents:
+2. make sure that third party libraries are filtered out by creating a local `attributes` file in the `$GIT_DIR/info` folder with contents:
 ```
 /scripts export-ignore
 /tests export-ignore
@@ -37,15 +37,15 @@ Guide to [setting up schroot](https://wiki.debian.org/Packaging/Pre-Requisites)
 .gitignore export-ignore
 ```
 
-2. `$ git archive --format=tar v9.7.4 | gzip > libgrokj2k_9.7.4.orig.tar.gz && mv libgrokj2k_9.7.4.orig.tar.gz ..`
+3. `$ git archive --format=tar v9.7.4 | gzip > libgrokj2k_9.7.4.orig.tar.gz && mv libgrokj2k_9.7.4.orig.tar.gz ..`
 
-3. `$ dpkg-buildpackage -us -uc`
+4. `$ dpkg-buildpackage -us -uc`
 
 or, to just check lintian errors:
 
    `$ dpkg-buildpackage -S`
 
-3. Check for errors / warnings
+4. Check for errors / warnings
 
    `$ lintian -EviIL +pedantic ../*.changes`
    
