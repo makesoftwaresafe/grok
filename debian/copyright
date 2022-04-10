@@ -15,7 +15,7 @@ Copyright: 2001-2003, David Janssens
   2008, Jerome Fimes, Communications & Systemes <jerome.fimes@c-s.fr>
   2011-2012, Centre National d'Etudes Spatiales (CNES), France
   2012, CS Systemes d'Information, France
-  2016-2020, Grok Image Compression Inc.
+  2016-2022, Grok Image Compression Inc.
 License: AGPL-3 and BSD-2-clause and Apache-2
 
 Files: src/lib/jp2/highway/*
@@ -28,11 +28,6 @@ Copyright: 2019, Aous Naman
   2019, Kakadu Software Pty Ltd, Australia
   2019, The University of New South Wales, Australia
 License: BSD-2-clause
-
-Files: src/lib/jp2/tile/SparseCanvas.h
-Copyright: 2016-2020, Grok Image Compression Inc.
-  2017, IntoPix SA <contact@intopix.com>
-License: AGPL-3 and BSD-2-clause
 
 Files: cmake/ucm.cmake
 Copyright: 2016, Viktor Kirilov

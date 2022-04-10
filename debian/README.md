@@ -4,12 +4,12 @@ Useful Commands
 
 Move master tag:
 
-`$ git push origin :refs/tags/v9.7.4 && git tag -fa v9.7.4 && git push origin master --tags`
+`$ git push origin :refs/tags/v9.7.5 && git tag -fa v9.7.5 && git push origin master --tags`
 
 
 Move debian/master tag:
 
-`$ git push origin :refs/tags/v9.7.4.debian && git tag -fa v9.7.4.debian && git push origin master --tags`
+`$ git push origin :refs/tags/v9.7.5.debian && git tag -fa v9.7.5.debian && git push origin master --tags`
 
 ------------------
 Building a Package
@@ -37,7 +37,7 @@ Guide to [setting up schroot](https://wiki.debian.org/Packaging/Pre-Requisites)
 .gitignore export-ignore
 ```
 
-3. `$ git archive --format=tar v9.7.4 | gzip > libgrokj2k_9.7.4.orig.tar.gz && mv libgrokj2k_9.7.4.orig.tar.gz ..`
+3. `$ git archive --format=tar v9.7.5 | gzip > libgrokj2k_9.7.5.orig.tar.gz && mv libgrokj2k_9.7.5.orig.tar.gz ..`
 
 4. `$ dpkg-buildpackage -us -uc`
 
