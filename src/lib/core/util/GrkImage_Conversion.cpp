@@ -1045,7 +1045,10 @@ bool GrkImage::isValidICCColourSpace(uint32_t signature)
 }
 bool GrkImage::validateICC(void)
 {
-	// check if already validated
+    if (!meta || !meta->color.icc_profile_buf)
+        return false;
+
+    // check if already validated
 	if(color_space == GRK_CLRSPC_ICC)
 		return true;
 
